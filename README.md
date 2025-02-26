@@ -44,6 +44,27 @@ rates and this difference was not taken into account when performing combination
 person can suggest a better breakdown.
 
 
+
+### Tests on first:last name counts
+
+Here I tested different combinations of first x last names. The naming indicates (first)x(last). So, 400x25k means 400 first names, 25000 last names.
+Results are only from runs where usernames were found, hence the small 'totalruns' numbers.
+
+```
++-----------------------------------------------+-----------+------------+--------------+
+| userlist                                      | totalruns | totalfound | averagefound |
++-----------------------------------------------+-----------+------------+--------------+
+| USERNAMES/tron_john.smith_400x25k_v1/xaa      |        28 |      34421 |    1229.3214 |
+| USERNAMES/tron_john.smith_ax500_v1/xaa        |      1319 |    1558141 |    1181.3048 |
+| USERNAMES/tron_john.smith_500x20k_v1/xaa      |      1351 |    1500346 |    1110.5448 |
+| USERNAMES/tron_john.smith_250x40k_v1/xaa      |        34 |      30847 |     907.2647 |
+| USERNAMES/tron_john.smith_150x66k_v1/xaa      |        11 |       8383 |     762.0909 |
+| USERNAMES/tron_john.smith_200x50k_v1/xaa      |       166 |      46700 |     281.3253 |
+| USERNAMES/tron_john.smith_1kx10k_v1/xaa       |      5646 |    1509946 |     267.4364 |
+| USERNAMES/tron_john.smith_100x100k_v1/xaa     |       193 |      39033 |     202.2435 |
+```
+
+
 ## By-Format Lists
 The ```by_format``` folder contains top username lists in various formats based on delimiters. These are:
 - name (john, smith, jsmith, smithj, johnsmith, smithjohn etc)
