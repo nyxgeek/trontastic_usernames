@@ -64,6 +64,41 @@ Results are only from runs where usernames were found, hence the small 'totalrun
 | USERNAMES/tron_john.smith_100x100k_v1/xaa     |       193 |      39033 |     202.2435 |
 ```
 
+For jsmith, I approached testing in a more structured manner. Taking the jsmith benchmark results, I took the top results, and tested various jsmith combinations against the top 67 of these. This number is arbitrary and was based on when I decided to pause them all.
+
+Similar to the john.smith listing, the jsmith listing variations are denoted by (first initial)x(last). So 17x2941 means 17 most common first initials and 2941 most common last names.
+
+The list of first initials used was derived from the complete trontastic username list.
+
+```
+3509657 j
+3503166 a
+3243364 m
+2951495 s
+2474269 c
+1953051 d
+1870843 k
+1838726 r
+1553709 l
+1553461 b
+1536929 t
+1203876 e
+ 980266 p
+ 922442 n
+ 897996 g
+ 840309 h
+ 712378 i
+ 516009 w
+ 486357 f
+ 472081 v
+ 283707 o
+ 224011 y
+ 194617 z
+  53819 q
+  43247 x
+  41594 u
+```
+
 
 ## By-Format Lists
 The ```by_format``` folder contains top username lists in various formats based on delimiters. These are:
