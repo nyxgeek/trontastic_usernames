@@ -13,10 +13,8 @@ Username lists derived from a 3-year survey of Azure. Also, survey scripts that 
 | File |  Description |
 | ------------- | ------------- |
 | trontastic_all.250k.txt   | Top 250 all usernames in all formats  |
-| trontastic_all.500k.txt   | Top 500k all usernames in all formats  |
 | trontastic_service_accounts.txt | Top service accounts  |
 | trontastic_john.smith_250k.txt | Top 250k john.smith formatted names |
-| trontastic_john.smith_500k.txt | Top 500k john.smith formatted names |
 | trontastic_john.txt  | first names |
 | trontastic_smith.txt | last names  | 
 | create_usernames_single.sh  | Generate many possible usernames from a single full name  |
