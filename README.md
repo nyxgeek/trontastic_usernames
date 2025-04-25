@@ -3,29 +3,34 @@
 ## Overview
 
 Username lists derived from a 3-year survey of Azure. Also, survey scripts that were used in this research.
+- Total of 70m usernames collected
+- 3.6m+ unique john.smith format
+- All lists were filtered with US Census lists - only names already in public data are included
 
 
 ### Files
 
-| File | Example | Description|
-| ------------- | ------------- | ------------- |
-| trontastic_all.250k.txt  | info, helpdesk, jsmith, msmith, mark, etc | Top 250 all usernames in all formats  |
-| trontastic_all.500k.txt  | info, helpdesk, jsmith, msmith, mark, etc | Top 500k all usernames in all formats  |
-| trontastic_service_accounts.txt  | admin, info, noreply, etc | Top service accounts  |
-| trontastic_john.smith_250k.txt
+| File |  Description |
+| ------------- | ------------- |
+| trontastic_all.250k.txt   | Top 250 all usernames in all formats  |
+| trontastic_all.500k.txt   | Top 500k all usernames in all formats  |
+| trontastic_service_accounts.txt | Top service accounts  |
+| trontastic_john.smith_250k.txt | Top 250k john.smith formatted names |
+| trontastic_john.smith_500k.txt | Top 500k john.smith formatted names |
 | trontastic_john.txt  | first names |
 | trontastic_smith.txt | last names  | 
-| create_usernames_from_name.sh  | jsmith, john.smith, john, smith, jjsmith, etc | Generate many possible usernames from a name  |
-
+| create_usernames_single.sh  | Generate many possible usernames from a single full name  |
+| create_usernames_lists.sh | Generate username lists in 17 common formats based off a list of first and last names|
 
 In addition to these lists, there are additional lists available in all popular username formats.
 
 ### Folders
 
-| Folder | Example | Description|
-| ------------- | ------------- | ------------- |
-| surveys  | N/A | Survey lists in different formats  |
-| census_lists  | N/A | Generator script to create census-based wordlists  |
+| Folder | Description|
+| ------------- | ------------- |
+| surveys  | Survey lists in different formats  |
+| census_lists | Generator script to create census-based wordlists  |
+| counts | Lists with user counts | 
 
 
 
@@ -46,12 +51,20 @@ person can suggest a better breakdown.
 This folder contains a list of census-derived top first names and last names, as well as some middle initials from trontastic research. These files, coupled with a generator script, can be used to create massive username lists in all formats.
 
 
-## create_usernames_from_name.sh
+## create_usernames_single.sh
 Will output a file containing usernames in many formats based off of a first and last name that is provided.
 
 Example:
 ```
-./create_usernames_from_name.sh john doe johndoe.txt
+./create_usernames_single.sh john doe johndoe.txt
+```
+
+## create_usernames_lists.sh
+Will output a file containing usernames in many formats based off of a first and last name file that is provided. ** Warning ** This can take up like 5GB+ of space.
+
+Example:
+```
+./create_usernames_lists.sh firstnames.txt lastnames.txt
 ```
 
 
